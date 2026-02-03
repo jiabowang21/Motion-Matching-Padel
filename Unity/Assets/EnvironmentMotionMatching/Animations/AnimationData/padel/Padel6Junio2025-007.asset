@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Padel6Junio2025-007
   m_EditorClassIdentifier: JLPM.MotionMatching::MotionMatching.AnimationData
   BVH: {fileID: 4900000, guid: 2609b207c4830a549b62bb0c9bd06330, type: 3}
-  UnitScale: 1
+  UnitScale: 0.01
   Tags: []

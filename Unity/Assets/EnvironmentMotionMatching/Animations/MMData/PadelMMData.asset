@@ -33,11 +33,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4e85dececa662fa4b9b4033b4e7fd316, type: 2}
   - {fileID: 11400000, guid: 7fe4f40dd1f23b64db14c9d2e121d094, type: 2}
   - {fileID: 11400000, guid: e74709c1b8e1a464a8e88ac947a3b4c9, type: 2}
-  AnimationDataTPose: {fileID: 11400000, guid: fca747247a861144091bc336469b039a, type: 2}
+  AnimationDataTPose: {fileID: 11400000, guid: f7bc3fae26cad3844a8083c10e05e158, type: 2}
   HipsForwardLocalVector:
     x: 0
     y: 0
-    z: 1
+    z: -1
   HipsUpLocalVector:
     x: 0
     y: 1
@@ -47,11 +47,11 @@ MonoBehaviour:
   - Name: Hips
     MecanimBone: 0
   - Name: Chest
-    MecanimBone: 8
+    MecanimBone: 7
   - Name: Chest2
-    MecanimBone: 55
+    MecanimBone: 8
   - Name: Chest3
-    MecanimBone: 55
+    MecanimBone: 54
   - Name: Chest4
     MecanimBone: 55
   - Name: Neck
@@ -59,38 +59,150 @@ MonoBehaviour:
   - Name: Head
     MecanimBone: 10
   - Name: RightCollar
-    MecanimBone: 55
-  - Name: RightShoulder
     MecanimBone: 12
+  - Name: RightShoulder
+    MecanimBone: 14
   - Name: RightElbow
-    MecanimBone: 55
+    MecanimBone: 16
   - Name: RightWrist
+    MecanimBone: 18
+  - Name: Prop1
     MecanimBone: 55
   - Name: LeftCollar
-    MecanimBone: 55
-  - Name: LeftShoulder
     MecanimBone: 11
+  - Name: LeftShoulder
+    MecanimBone: 13
   - Name: LeftElbow
-    MecanimBone: 55
+    MecanimBone: 15
   - Name: LeftWrist
-    MecanimBone: 55
+    MecanimBone: 17
   - Name: RightHip
-    MecanimBone: 55
+    MecanimBone: 2
   - Name: RightKnee
-    MecanimBone: 55
+    MecanimBone: 4
   - Name: RightAnkle
-    MecanimBone: 55
+    MecanimBone: 6
   - Name: RightToe
-    MecanimBone: 55
+    MecanimBone: 20
   - Name: LeftHip
-    MecanimBone: 55
+    MecanimBone: 1
   - Name: LeftKnee
-    MecanimBone: 55
+    MecanimBone: 3
   - Name: LeftAnkle
-    MecanimBone: 55
+    MecanimBone: 5
   - Name: LeftToe
-    MecanimBone: 55
-  TrajectoryFeatures: []
-  PoseFeatures: []
+    MecanimBone: 19
+  TrajectoryFeatures:
+  - Name: FuturePosition
+    FeatureType: 0
+    FramesPrediction: 14000000280000003c000000
+    SimulationBone: 1
+    Bone: 0
+    ZeroX: 0
+    ZeroY: 1
+    ZeroZ: 0
+    FeatureExtractor: {fileID: 0}
+    IsMainPositionFeature: 1
+  - Name: FutureDirection
+    FeatureType: 1
+    FramesPrediction: 14000000280000003c000000
+    SimulationBone: 1
+    Bone: 0
+    ZeroX: 0
+    ZeroY: 1
+    ZeroZ: 0
+    FeatureExtractor: {fileID: 0}
+    IsMainPositionFeature: 0
+  PoseFeatures:
+  - Name: LeftFootPosition
+    FeatureType: 0
+    Bone: 5
+  - Name: RightFootPosition
+    FeatureType: 0
+    Bone: 6
+  - Name: RightFootVelocity
+    FeatureType: 1
+    Bone: 6
+  - Name: LeftFootVelocity
+    FeatureType: 1
+    Bone: 5
+  - Name: HipsVelocity
+    FeatureType: 1
+    Bone: 0
   EnvironmentFeatures: []
-  JointsLocalForward: []
+  JointsLocalForward:
+  - x: 0
+    y: 0
+    z: 1
+  - x: 0
+    y: 0.11043152
+    z: -0.9938837
+  - x: 0
+    y: 0
+    z: -1
+  - x: 0
+    y: -0.10151368
+    z: -0.9948341
+  - x: 0
+    y: -0.1016163
+    z: -0.9948237
+  - x: 0
+    y: 0.000000007450581
+    z: -1
+  - x: 0
+    y: 0.21831731
+    z: -0.9758778
+  - x: 0
+    y: 0.058722094
+    z: -0.9982744
+  - x: 0
+    y: 0.000000007450581
+    z: -1
+  - x: -0.99999994
+    y: 4.440892e-16
+    z: -0.000000059604645
+  - x: -0.99918795
+    y: 3.1544536e-10
+    z: 0.040289782
+  - x: -0.99999994
+    y: 4.440892e-16
+    z: -0.000000059604645
+  - x: 0
+    y: 0
+    z: -1
+  - x: 0
+    y: 0.000000007450581
+    z: -1
+  - x: 0.99999994
+    y: -4.440892e-16
+    z: 0.000000059604645
+  - x: 0.99918795
+    y: 3.1544445e-10
+    z: 0.0402899
+  - x: 0.99999994
+    y: -4.440892e-16
+    z: 0.000000059604645
+  - x: 0
+    y: 0.04796392
+    z: -0.9988491
+  - x: 0
+    y: 0.08057766
+    z: -0.9967483
+  - x: 0
+    y: -0.000000014901161
+    z: -1
+  - x: 0
+    y: -0.000000014901161
+    z: -1
+  - x: 0
+    y: 0.04802144
+    z: -0.9988463
+  - x: 0
+    y: 0.08121233
+    z: -0.9966968
+  - x: 0
+    y: -0.000000014901161
+    z: -1
+  - x: 0
+    y: -0.000000014901161
+    z: -1
